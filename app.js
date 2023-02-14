@@ -12,14 +12,14 @@ class UI {
     addProduct(product, isFirstRender) {
         const productList = document.getElementById('product-list');
         const element = document.createElement('div');
-        //Agregar un ID al producto para identificar
+        // Agregar un ID al producto para identificar
         product.id = Date.now()
         element.innerHTML = `
           <div class= "card text-center mb-4">
               <div class="card-body" id="${product.id}">
-                  <strong>Product Name</strong>: ${product.name}
-                  <strong>Product Price</strong>: ${product.price}
-                  <strong>Product Year</strong>: ${product.year}
+                  <strong>Nombre del Producto</strong>: ${product.name}
+                  <strong>Precio</strong>: ${product.price}
+                  <strong>Año</strong>: ${product.year}
                   <a href="#" class="btn btn-info" name="delete">Eliminar</a>
 
               </div>
