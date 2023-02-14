@@ -28,7 +28,7 @@ class UI {
         `;
         productList.appendChild(element);
 
-        //Se agrega para evitar guardar en LS cuando es la primera vez que se carguen los datos
+        // Se agrega para evitar guardar en LS cuando es la primera vez que se carguen los datos
         if(!isFirstRender){
             this.saveInLocalStorage(product)
         }
